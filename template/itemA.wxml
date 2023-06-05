@@ -1,0 +1,11 @@
+<template name="itemA">
+	<view>
+		<text>这是 itemA 组件</text>
+	</view>
+	<view>
+		<text>{{name}}</text>
+	</view>
+	<view>
+		<text>{{age}}</text>
+	</view>
+</template>

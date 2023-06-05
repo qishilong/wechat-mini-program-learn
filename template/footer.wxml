@@ -1,0 +1,3 @@
+<view>
+	<text hidden = 'false'>footer</text>
+</view>
