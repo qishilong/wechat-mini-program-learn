@@ -1,4 +1,4 @@
-<include src="./../../template/header"/>
+<!-- <include src="./../../template/header"/>
 
 <view>{{time}}</view>
 <view>
@@ -143,4 +143,9 @@ const data = {
   <text bindlongtap="longTapFn" bindtap="handTap">
     longTapFn
   </text>
+</view> -->
+
+<view>
+  <text>首页</text>
 </view>
+<button bindtap="skipDetailFn">跳转去详情</button>

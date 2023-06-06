@@ -2,7 +2,7 @@
 // 获取应用实例
 const app = getApp()
 const a = 10, b = 11;
-console.log(app.globalData.userInfo)
+// console.log(app.globalData.userInfo)
 
 Page({
   data: {
@@ -77,19 +77,25 @@ Page({
   handTap: (e) => {
     console.log('handleTop 触发了', e)
   },
-  onLoad(options) {
-    console.log('onLoad', options, this.data)
-  },
-  onReady() {
-    console.log('onReady', this.data)
-  },
-  onShow() {
-    console.log('onShow', this.data)
-  },
-  onHide() {
-    console.log('onHide')
-  },
-  onUnload() {
-    console.log('onUnload')
+  // onLoad(options) {
+  //   console.log('onLoad', options, this.data)
+  // },
+  // onReady() {
+  //   console.log('onReady', this.data)
+  // },
+  // onShow() {
+  //   console.log('onShow', this.data)
+  // },
+  // onHide() {
+  //   console.log('onHide')
+  // },
+  // onUnload() {
+  //   console.log('onUnload')
+  // }
+
+  skipDetailFn(){
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+    })
   }
 })
