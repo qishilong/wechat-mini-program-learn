@@ -96,3 +96,24 @@ const data = {
 />
 
 <include src="./../../template/footer"/>
+
+<view>
+  <text class="color1">样式1</text>
+</view>
+
+<view>
+  <text class="color2">
+    样式二
+  </text>
+</view>
+
+<view class="color3">
+  <text class="color2">
+    样式三
+  </text>
+</view>
+
+
+<view>
+  <text id="color4">样式四</text>
+</view>
