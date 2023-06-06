@@ -1,13 +1,14 @@
 // index.js
 // 获取应用实例
 const app = getApp()
+const a = 10, b = 11;
 
 Page({
   data: {
     time: new Date().toString(),
     name: 'xiaozhi',
-    a: 10,
-    b: 11,
+    a: a,
+    b: b,
     c: 10,
     isShow:false,
     listShow: [1,2,3,4],
@@ -53,5 +54,26 @@ Page({
     this.setData({
       numberArray: this.data.numberArray
     })
+  },
+  handleTap1: function(e){
+    console.log('handleTap1')
+  },
+  handleTap2: function(e){
+    console.log('handleTap2')
+  },
+  handleTap3: (e)=>{
+    console.log('handleTap3')
+  },
+  handleTap4: (e)=>{
+    console.log('handleTap4')
+  },
+  handleLongPressFn: (e)=>{
+    console.log('handleLongPressFn触发了',e)
+  },
+  longTapFn: (e)=>{
+    console.log('longtap 触发了',e)
+  },
+  handTap:(e)=>{
+    console.log('handleTop 触发了', e)
   }
 })

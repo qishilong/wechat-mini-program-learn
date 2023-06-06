@@ -117,3 +117,30 @@ const data = {
 <view>
   <text id="color4">样式四</text>
 </view>
+
+<view
+  id="outer"
+  bind:touchstart="handleTap1"
+  capture-bind:touchstart="handleTap2"
+>
+  outer view
+  <view
+    id="inner"
+    bind:touchstart="handleTap3"
+    capture-bind:touchstart="handleTap4"
+  >
+    inner view
+  </view>
+</view>
+
+<view>
+  <text bindlongpress="handleLongPressFn" bindtap="handTap">
+    handleLongPressFn
+  </text>
+</view>
+
+<view>
+  <text bindlongtap="longTapFn" bindtap="handTap">
+    longTapFn
+  </text>
+</view>
